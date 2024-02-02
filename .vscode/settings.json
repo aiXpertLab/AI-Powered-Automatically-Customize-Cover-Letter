@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "__init__.py": true,
+    ".gitignore": true,
+    "LICENSE": true,
+    "src\\aiCL\\gui\\__init__.py": true,
+    "desktop.ini": true,
+    "src\\__init__.py": true,
+    "src\\aiCL\\functions\\__init__.py": true,
+    "src\\aiCL\\__init__.py": true,
+    "src\\aiCL\\ui\\__init__.py": true,
+    "src\\aiCL\\data\\__init__.py": true,
+    "src\\aiCL\\business\\__init__.py": true,
+    "src\\aiCL\\config\\__init__.py": true,
+    "src\\aiCL\\utils\\__init__.py": true,
+    "src\\aiCL\\resources\\__init__.py": true
+  }
+}
