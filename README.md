@@ -4,8 +4,12 @@ AI Assistant Job Flow Automator: Automate Sending Out Cover Letter, Resume, Cold
 
 <div align="center">
 
-<a href='https://www.pingcap.com/?utm_source=github&utm_medium=tidb'>
-<img src="docs/tidb-logo-with-text.png" alt="TiDB, a distributed SQL database" height=100></img>
+<a href='https://www.hypech.com'>
+<img src="src/aiCL/resources/images/ai_powered_long.png" alt="AI-Powered Cover Letter" height=300></img>
+
+
+
+
 </a>
 <br></br>
 
