@@ -1,5 +1,5 @@
-# Automatically-Customize-and-Send-Cover-Letter-for-Each-Job-Post
-AI Assistant Job Flow Automator: Automate Sending Out Cover Letter, Resume, Cold Email, and More
+### AI-Powered Automatically Customize Cover Letter for Each Job Post
+AI Assistant Job Flow Automator. Automate tailor and prepare cover letter based on your own resume and the specific job description scraped from the job site. 
 
 
 <div align="center">
