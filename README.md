@@ -1,11 +1,15 @@
-# Automatically-Customize-and-Send-Cover-Letter-for-Each-Job-Post
-AI Assistant Job Flow Automator: Automate Sending Out Cover Letter, Resume, Cold Email, and More
+### AI-Powered Automatically Customize Cover Letter for Each Job Post
+AI Assistant Job Flow Automator. Automate tailor and prepare cover letter based on your own resume and the specific job description scraped from the job site. 
 
 
 <div align="center">
 
-<a href='https://www.pingcap.com/?utm_source=github&utm_medium=tidb'>
-<img src="docs/tidb-logo-with-text.png" alt="TiDB, a distributed SQL database" height=100></img>
+<a href='https://www.hypech.com'>
+<img src="src/aiCL/resources/images/ai_powered_long.png" alt="AI-Powered Cover Letter" height=300></img>
+
+
+
+
 </a>
 <br></br>
 
