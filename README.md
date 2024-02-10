@@ -24,8 +24,6 @@
 [![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
 </div>
 
-## Social
-
 [![jhc github](https://img.shields.io/badge/GitHub-aiXpertLab-181717.svg?style=flat&logo=github)](https://github.com/aiXpertLab)
 [![jhc linkedin](https://img.shields.io/badge/Linkedin-aiXpert-5087B2.svg?style=flat&logo=Linkedin)](https://www.linkedin.com/in/aiXpert)
 [![jhc twitter](https://img.shields.io/badge/Twitter-@aiXpertLab-00aced.svg?style=flat&logo=twitter)](https://twitter.com/aiXpertLab)
