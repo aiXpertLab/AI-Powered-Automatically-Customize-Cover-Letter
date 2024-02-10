@@ -1,7 +1,7 @@
 ### AI-Powered Automatically Customize Cover Letter for Each Job Post
 > - AI-Powered, Customized, Cover Letters
 > - AI Assistant Job Flow Automator. 
-> - Automate the customization and crafting of cover letters tailored to your resume and the unique requirements outlined in the job description extracted from a website.
+> - Automate the customization of cover letters tailored to your resume and the unique requirements outlined in the job description extracted.
 
 <div align="center">
 
@@ -9,7 +9,6 @@
 <img src="src/aiCL/resources/images/ai_powered_long.png" alt="AI-Powered Cover Letter" height=300></img></a>
 <br></br>
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![python](https://img.shields.io/badge/Python-3.12-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![jupyter](https://img.shields.io/badge/Jupyter-Lab-F37626.svg?style=flat&logo=Jupyter)](https://jupyterlab.readthedocs.io/en/stable)
 [![tensorflow](https://img.shields.io/badge/TensorFlow-1.12-FF6F00.svg?style=flat&logo=tensorflow)](https://www.tensorflow.org)
@@ -17,22 +16,18 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub release](https://img.shields.io/github/tag/pingcap/tidb.svg?label=release)](https://github.com/pingcap/aixpertlab/releases)
 [![GitHub release date](https://img.shields.io/github/release-date/pingcap/tidb.svg)](https://github.com/pingcap/aixpertlab/releases)
-<div>  
  
 [![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
-</div>
 
 [![jhc github](https://img.shields.io/badge/GitHub-aiXpertLab-181717.svg?style=flat&logo=github)](https://github.com/aiXpertLab)
 [![jhc linkedin](https://img.shields.io/badge/Linkedin-aiXpert-5087B2.svg?style=flat&logo=Linkedin)](https://www.linkedin.com/in/aiXpert)
 [![jhc twitter](https://img.shields.io/badge/Twitter-@aiXpertLab-00aced.svg?style=flat&logo=twitter)](https://twitter.com/aiXpertLab)
 [![jhc fb](https://img.shields.io/badge/Facebook-aiXpertLab-5087B2.svg?style=flat&logo=facebook)](https://www.facebook.com/aiXpertLab/)
 [![jhc website](https://img.shields.io/badge/Website-HYPEch.com-5087B2.svg?style=flat&logo=Google-Chrome)](https://hypech.com)
-[![jhc gmail](https://img.shields.io/badge/Website-aiXpertLab@gmail.com-5087B2.svg?style=flat&logo=gmail)](https://gmail.com)
-
-
-<br />
+[![jhc gmail](https://img.shields.io/badge/Gmail-aiXpertLab@gmail.com-5087B2.svg?style=flat&logo=gmail)](https://gmail.com)
 
 </div> 
 
@@ -45,6 +40,22 @@ The AI-powered solution enables customers to integrate their specialized knowled
 - [Intuitive User Interface](#architecture)
 
 You will get Unlock Your Personalized AI Assistant Effortlessly: Scrape, Upload, and Go.
+
+# Project Overview
+
+Why use Selenium in this project?
+There are a few other common web scraping tools such as Beautifulsoup, Selenium, and Scrapy. Each of these tools has its advantages and disadvantages from different aspects although they have the same goal in the end.
+
+In this project, we will be using Selenium which will help us to navigate between pages, fill out forms (such as login credentials), click links, etc. Briefly, besides the data scraping part, Selenium is going to be used to automate the following steps mentioned below to manage some actions until we access the pages where we will scrape the data. We will scrape the job offers and scrape their information by visiting 14 pages with each page having 25 job offers.
+
+
+
+# Requirements:
+
+1. Python experience (at least the first 15 days of this project).
+2. Selenium & chromedriver installed (watch how in this one).
+https://chromedriver.chromium.org/
+
 
 # Quick start
 
@@ -179,3 +190,36 @@ TiDB is under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for deta
 
 - Thanks [cznic](https://github.com/cznic) for providing some great open source tools.
 - Thanks [GolevelDB](https://github.com/syndtr/goleveldb), [BoltDB](https://github.com/boltdb/bolt), and [RocksDB](https://github.com/facebook/rocksdb) for their powerful storage engines.
+
+First, I do not condone scraping LinkedIn data in any way. Anyone who wishes to do so should first read LinkedIn's statement on their prohibition of scraping software.https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software?lang=en
+Warning: LinkedIn has strong anti-scraping policies, they may blacklist ips making unauthenticated or unusual requests
+
+What's Inside?
+In this project, I have used Selenium library to automate the scraping process, navigate between pages, fill out forms (such as login credentials), click links, etc. Briefly, besides the data scraping part, Selenium was used to automate the following steps mentioned below to manage some actions until we access the pages where we will scrape the data. I have scraped the job offers and scraped their information by visiting 14 pages with each page having 25 job offers.
+
+Automated Steps
+
+Enter to Linkedin login page
+Spot the cookies pop-up and click Accept cookies
+Fill E-Mail Address and Password areas and click Login 
+Click on the Jobs from the section above 
+Search for job positions Junior Data Analyst in Spain
+Scroll down till the end of the page while collecting the link of each displayed Job offer
+Go to the next page when it is the end of the page while keep collecting links 
+After all links are collected, go to the each link
+Click the "See More" button the expand the job description text.
+Scrape the desired data 
+Items Scraped:
+
+Job Title
+Company Name
+Company Location
+Job Description
+Work Method (Hybrid, Remote, On-Site)
+Experience Level
+Post Date
+Extra:
+
+You can check my medium post where I have analyzed the d
+
+https://selenium-python.readthedocs.io/
