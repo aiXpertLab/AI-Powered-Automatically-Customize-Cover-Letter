@@ -1,5 +1,9 @@
 ### AI-Powered Automatically Customize Cover Letter for Each Job Post
-AI Assistant Job Flow Automator. Automate tailor and prepare cover letter based on your own resume and the specific job description scraped from the job site. 
+> AI-Powered, Customized, Cover Letters
+
+> AI Assistant Job Flow Automator. 
+
+>Automate tailor and prepare cover letter based on your own resume and the specific job description scraped from Linkedin. 
 
 
 <div align="center">
@@ -13,55 +17,110 @@ AI Assistant Job Flow Automator. Automate tailor and prepare cover letter based 
 </a>
 <br></br>
 
-[![LICENSE](https://img.shields.io/github/license/pingcap/tidb.svg)](https://github.com/pingcap/tidb/blob/master/LICENSE)
-[![Language](https://img.shields.io/badge/Language-Go-blue.svg)](https://golang.org/)
-[![Build Status](https://prow.tidb.net/badge.svg?jobs=pingcap/tidb/merged_build)](https://prow.tidb.net/?repo=pingcap%2Ftidb&type=postsubmit&job=pingcap%2Ftidb%2Fmerged_build)
-[![Go Report Card](https://goreportcard.com/badge/github.com/pingcap/tidb)](https://goreportcard.com/report/github.com/pingcap/tidb)
-[![GitHub release](https://img.shields.io/github/tag/pingcap/tidb.svg?label=release)](https://github.com/pingcap/tidb/releases)
-[![GitHub release date](https://img.shields.io/github/release-date/pingcap/tidb.svg)](https://github.com/pingcap/tidb/releases)
-[![Coverage Status](https://codecov.io/gh/pingcap/tidb/branch/master/graph/badge.svg)](https://codecov.io/gh/pingcap/tidb)
-[![GoDoc](https://img.shields.io/badge/Godoc-reference-blue.svg)](https://godoc.org/github.com/pingcap/tidb)
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Language](https://img.shields.io/badge/Language-Python-blue.svg)](https://golang.org/)
+[![GitHub release](https://img.shields.io/github/tag/pingcap/tidb.svg?label=release)](https://github.com/pingcap/aixpertlab/releases)
+[![GitHub release date](https://img.shields.io/github/release-date/pingcap/tidb.svg)](https://github.com/pingcap/aixpertlab/releases)
 <div>  
   
-[![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://www.pingcap.com/?utm_source=github&utm_medium=tidb_readme)
-[![Playground](<https://img.shields.io/badge/-Try%20It%20Online%20%E2%86%92-rgb(84,56,255)?style=for-the-badge>)](https://play.tidbcloud.com/?utm_source=github&utm_medium=tidb_readme)
+[![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
 
 </div>
 
 ---
 
 <div>
-    <a href="https://twitter.com/tidb_developer"><img src="https://img.shields.io/badge/- @TiDB__Developer -424549?style=social&logo=twitter" height=25></a>
+    <a href="https://twitter.com/aiXpertLab"><img src="https://img.shields.io/badge/- @aiXpertLab -424549?style=social&logo=twitter" height=25></a>
     &nbsp;
-    <a href="https://ask.pingcap.com/"><img src="https://img.shields.io/badge/- Forum -red?style=social&logo=discourse" height=25></a>
+    <a href="https://www.linkedin.com/in/aiXpert"><img src="https://img.shields.io/badge/-aiXpert-red?style=social&logo=Linkedin" height=25></a>
     &nbsp;
-    <a href="https://discord.gg/KVRZBR2DrG?utm_source=github"><img src="https://img.shields.io/badge/- Discord -red?style=social&logo=discord" height=25></a>
+    <a href="https://www.facebook.com/aiXpertLab/"><img src="https://img.shields.io/badge/-aiXpertLab-red?style=social&logo=facebook" height=25></a>
     &nbsp;
-    <a href="https://slack.tidb.io/invite?team=tidb-community&channel=everyone&ref=pingcap-tidb"><img src="https://img.shields.io/badge/-Slack-red?style=social&logo=slack" height=25></a>
+    <a href="https://www.hypech.com/"><img src="https://img.shields.io/badge/-aiXpertLab-red?style=social&logo=Microsoft-edge" height=25></a>
     &nbsp;
-    <a href="https://stackoverflow.com/questions/tagged/tidb"><img src="https://img.shields.io/badge/-Stack Overflow-red?style=social&logo=stackoverflow" height=25></a>
+    <a href="https://www.gmail.com/"><img src="https://img.shields.io/badge/-aiXpertLab@gmail.com-red?style=social&logo=gmail" height=25></a>
 </div>
 
 <br />
 
 </div> 
 
-## What is TiDB?
+# Overview
 
-TiDB (/’taɪdiːbi:/, "Ti" stands for Titanium) is an open-source distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability.
+Our AI-powered solution enables customers to integrate their specialized knowledge with OpenAI models to automate the extraction of relevant information from websites of their interest, effectively training the AI to deliver tailored results as if it were trained on their unique dataset.
 
-- [Key features](https://docs.pingcap.com/tidb/stable/overview#key-features)
-- [Architecture](#architecture)
-- [MySQL compatibility](https://docs.pingcap.com/tidb/stable/mysql-compatibility)
+- [GPT-4 from OpenAI](#architecture)
+- [Powered by Python](#architecture)
+- [Intuitive User Interface](#architecture)
 
-See what TiDB is capable ONLINE at [TiDB Playground](https://play.tidbcloud.com/?utm_source=github&utm_medium=tidb_readme).
+# Quick start
 
-For more details and latest updates, see [TiDB documentation](https://docs.pingcap.com/tidb/stable) and [release notes](https://docs.pingcap.com/tidb/dev/release-notes).
 
-For future plans, see the [TiDB roadmap](roadmap.md).
+## 操作步骤
 
-## Quick start
+1. 请首先配置好 openai 的 api（使用.env文件或者在代码中配置）
+2. 将pdf简历上传到文件夹 auto_job_find 里，命名为 **“my_cover.pdf"**
+3. 将需要的包安装好
+4. 执行 write_response.py
+
+## 关于 asistant
+
+会自动生成 openai 的 asistant，并在本地产生一个 .json 文件，只有第一次运行的时候才会产生，后面每次运行如果检测到这个 json ，就会调用已有的 asistant。
+
+## 使用到的包
+
+- `python-dotenv`
+- `openai`
+- `selenium`
+- `robotframework`
+- `robotframework-seleniumlibrary`
+- `robotframework-pythonlibcore`
+- `faiss-cpu不支持3.12（faiss-gpu不清楚）。建议大家用3.11及以下版本的python运行脚本。` from @[huanmit](https://github.com/huanmit)
+
+## About RPA
+
+tutorial video about how to learn [rpa](https://www.youtube.com/watch?v=65OPFmEgCbM&list=PLx4LEkEdFArgrdD_lvXe_hYBy8zM0Sp3b&index=1)
+
+Plugin: Intellibot@Selenium Library
+
+------------------下面是简单的教学视频---------------------
+
+[B站链接](https://www.bilibili.com/video/BV1UC4y1N78v/?share_source=copy_web&vd_source=b2608434484091fcc64d4eb85233122d)
+
+[油管链接](https://youtu.be/TlnytEi2lD8?si=jfcDj2MZqBptziZc)
+
+## 运行方式
+先将该项目clone到本地，然后在项目根目录下执行
+```bash
+pip install -r requirements.txt
+```
+
+### assistant方式运行
+打开.env文件，在里面配置好OpenAI的API key
+随后将pdf简历上传到文件夹auto_job_find里，命名为“my_cover".随后执行write_response.py即可
+这种方式不支持使用自定义api，优势是执行速度更快
+如果需要使用自定义api，请使用下面的方式运行
+
+### langchain方式
+同样打开.env文件，在里面配置好OpenAI的API key和你想要请求的api地址
+随后将pdf简历放到文件夹resume里
+最后执行write_response.py即可
+
+------------下面是其他朋友基于js构建的更加易于使用的代码---------------
+
+我一直也在考虑如何可以降低各位的使用门槛，基于现在项目的热度，我发现很多朋友都需要这个东西来帮助自己，但是我相信对于更多的人而言，甚至vpn都是一个障碍
+
+下面这位朋友基于js实现了一个更加简易的版本，虽然因为调用的免费api，无法使用assistant进行retrival，需要自己对简历进行简单的处理，但我依然认为这是个很棒的项目
+
+感谢朋友的贡献，以下是链接：
+
+[https://github.com/noBaldAaa](https://github.com/noBaldAaa/find-job)https://github.com/noBaldAaa/find-job
+
+------------下面是其他朋友基于azure的openai api构建的版本的更加易于使用的代码---------------
+https://github.com/LouisCaixuran/auto_job_find_azure
+
+
+
 
 ### Start with TiDB Cloud
 
