@@ -1,7 +1,7 @@
 ### AI-Powered Automatically Customize Cover Letter for Each Job Post
-> 1. AI-Powered, Customized, Cover Letters
-> 2. AI Assistant Job Flow Automator. 
-> 3. Automate the customization and crafting of cover letters tailored to your resume and the unique requirements outlined in the job description extracted from a website.
+> - AI-Powered, Customized, Cover Letters
+> - AI Assistant Job Flow Automator. 
+> - Automate the customization and crafting of cover letters tailored to your resume and the unique requirements outlined in the job description extracted from a website.
 
 <div align="center">
 
@@ -10,75 +10,29 @@
 <br></br>
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Language](https://img.shields.io/badge/Language-Python-blue.svg)](https://python.org/)
+[![python](https://img.shields.io/badge/Python-3.12-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+[![jupyter](https://img.shields.io/badge/Jupyter-Lab-F37626.svg?style=flat&logo=Jupyter)](https://jupyterlab.readthedocs.io/en/stable)
+[![tensorflow](https://img.shields.io/badge/TensorFlow-1.12-FF6F00.svg?style=flat&logo=tensorflow)](https://www.tensorflow.org)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
 [![GitHub release](https://img.shields.io/github/tag/pingcap/tidb.svg?label=release)](https://github.com/pingcap/aixpertlab/releases)
 [![GitHub release date](https://img.shields.io/github/release-date/pingcap/tidb.svg)](https://github.com/pingcap/aixpertlab/releases)
 <div>  
  
 [![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
 </div>
----
-
-
-
-# GitHub Badges
 
 ## Social
 
-[![jhc github](https://img.shields.io/badge/GitHub-jhrcook-181717.svg?style=flat&logo=github)](https://github.com/jhrcook)
-[![jhc twitter](https://img.shields.io/badge/Twitter-@JoshDoesA-00aced.svg?style=flat&logo=twitter)](https://twitter.com/JoshDoesa)
-[![jhc website](https://img.shields.io/badge/Website-Joshua_Cook-5087B2.svg?style=flat&logo=telegram)](https://joshuacook.netlify.com)
+[![jhc github](https://img.shields.io/badge/GitHub-aiXpertLab-181717.svg?style=flat&logo=github)](https://github.com/aiXpertLab)
+[![jhc linkedin](https://img.shields.io/badge/Linkedin-aiXpert-5087B2.svg?style=flat&logo=Linkedin)](https://www.linkedin.com/in/aiXpert)
+[![jhc twitter](https://img.shields.io/badge/Twitter-@aiXpertLab-00aced.svg?style=flat&logo=twitter)](https://twitter.com/aiXpertLab)
+[![jhc fb](https://img.shields.io/badge/Facebook-aiXpertLab-5087B2.svg?style=flat&logo=facebook)](https://www.facebook.com/aiXpertLab/)
+[![jhc website](https://img.shields.io/badge/Website-HYPEch.com-5087B2.svg?style=flat&logo=Google-Chrome)](https://hypech.com)
+[![jhc gmail](https://img.shields.io/badge/Website-aiXpertLab@gmail.com-5087B2.svg?style=flat&logo=gmail)](https://gmail.com)
 
-
-## Code
-
-### Swift
-![Swift](https://img.shields.io/badge/Swift-Swift_Project-FA7343.svg?style=flat&logo=swift)
-![iOS](https://img.shields.io/badge/iOS-iOS_Project-999999.svg?style=flat&logo=apple)
-
-### R
-
-[![R](https://img.shields.io/badge/-script-276DC3.svg?style=flat&logo=R)](https://cran.r-project.org)
-[![RStudio](https://img.shields.io/badge/RStudio-project-75AADB.svg?style=flat&logo=RStudio)](https://www.rstudio.com)
-
-### Python
-
-[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![jupyter](https://img.shields.io/badge/Jupyter-Lab-F37626.svg?style=flat&logo=Jupyter)](https://jupyterlab.readthedocs.io/en/stable)
-[![pytorch](https://img.shields.io/badge/PyTorch-1.6.0-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org)
-[![tensorflow](https://img.shields.io/badge/TensorFlow-1.12-FF6F00.svg?style=flat&logo=tensorflow)](https://www.tensorflow.org)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-[![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.63.0-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.2.0-FF4B4B.svg?style=flat&logo=Streamlit&logoColor=white)](https://streamlit.io)
-
-### Rust
-
-![Rust](https://img.shields.io/badge/Rust-lang-000000.svg?style=flat&logo=rust)
-
-## Academia
-
-[![fighsare](https://img.shields.io/badge/FigShare-DOI:00.0000/m9.figshare.00000000-556472?logo=figshare&logoColor=white)](https://figshare.com/account/home)
-
-## Miscellaneous
-
-[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-
-
-<div>
-    <a href="https://twitter.com/aiXpertLab"><img src="https://img.shields.io/badge/- @aiXpertLab -424549?style=social&logo=twitter" height=25></a>
-    &nbsp;
-    <a href="https://www.linkedin.com/in/aiXpert"><img src="https://img.shields.io/badge/-aiXpert-red?style=social&logo=Linkedin" height=25></a>
-    &nbsp;
-    <a href="https://www.facebook.com/aiXpertLab/"><img src="https://img.shields.io/badge/-aiXpertLab-red?style=social&logo=facebook" height=25></a>
-    &nbsp;
-    <a href="https://www.hypech.com/"><img src="https://img.shields.io/badge/-aiXpertLab-red?style=social&logo=Microsoft-edge" height=25></a>
-    &nbsp;
-    <a href="https://www.gmail.com/"><img src="https://img.shields.io/badge/-aiXpertLab@gmail.com-red?style=social&logo=gmail" height=25></a>
-</div>
 
 <br />
 
