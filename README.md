@@ -17,8 +17,8 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![pydocstyle](https://img.shields.io/badge/pydocstyle-enabled-AD4CD3)](http://www.pydocstyle.org/en/stable/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub release](https://img.shields.io/github/tag/pingcap/tidb.svg?label=release)](https://github.com/pingcap/aixpertlab/releases)
-[![GitHub release date](https://img.shields.io/github/release-date/pingcap/tidb.svg)](https://github.com/pingcap/aixpertlab/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/aiXpertLab/AI-Powered-Automatically-Customize-Cover-Letter)](https://github.com/aiXpertLab/AI-Powered-Automatically-Customize-Cover-Letter/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/aiXpertLab/AI-Powered-Automatically-Customize-Cover-Letter)](https://github.com/aixpertlab/)
  
 [![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
 
