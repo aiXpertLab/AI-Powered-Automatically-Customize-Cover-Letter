@@ -211,6 +211,7 @@ Warning: LinkedIn has strong anti-scraping policies, they may blacklist ips maki
 What's Inside?
 In this project, I have used Selenium library to automate the scraping process, navigate between pages, fill out forms (such as login credentials), click links, etc. Briefly, besides the data scraping part, Selenium was used to automate the following steps mentioned below to manage some actions until we access the pages where we will scrape the data. I have scraped the job offers and scraped their information by visiting 14 pages with each page having 25 job offers.
 
+
 Automated Steps
 
 Enter to Linkedin login page
