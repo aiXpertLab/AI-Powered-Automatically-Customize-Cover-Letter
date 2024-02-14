@@ -66,7 +66,7 @@ There's a saying that goes, 'the job hunt is a job in itself.' Indeed, a signifi
 2. Python
 3. Selenium WebDriver
 
-In this project, Selenium will facilitate various tasks such as navigating between pages, completing forms (e.g., login credentials), clicking links, and scrolling down. Apart from data scraping, Selenium will be instrumental in automating the outlined steps to manage actions until accessing the pages for data extraction. We will extract job offers and job descriptions.
+Selenium will facilitate various tasks such as navigating between pages, completing forms (e.g., login credentials), clicking links, and scrolling down. Apart from data scraping, Selenium will be instrumental in automating the outlined steps to manage actions until accessing the pages for data extraction. We will extract job offers and job descriptions.
 
 Utilizing ChatGPT, known for its professional assistance, and leveraging your own resume as a knowledge base, ChatGPT will generate tailored resumes.
 
