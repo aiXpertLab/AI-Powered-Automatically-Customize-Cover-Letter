@@ -51,7 +51,9 @@ You will get Unlock Your Personalized AI Assistant Effortlessly: Scrape, Upload,
 >
 >Ensure that you comply with the scraping policies of each website. Violating these policies could lead to consequences such as account restrictions, IP bans, or legal action.
 
-> [!NOTE] Disclaimer
+> [!NOTE] 
+> **Disclaimer**
+> 
 >This project is provided for general-purpose use, and we do not take responsibility for any consequences resulting from the misuse of web scraping techniques. Users are solely responsible for ensuring compliance with website scraping policies and any associated risks.
 
 # Overview
