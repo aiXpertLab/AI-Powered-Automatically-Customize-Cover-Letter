@@ -1,5 +1,6 @@
 import os, shutil, json, random, inspect
 import tkinter as tk
+import openai
 
 from openai import OpenAI
 from config.config import Path_
@@ -35,14 +36,43 @@ class ShowJson:
     def show_json(obj):
         print(json.loads(obj.model_dump_json()))
 
+class KeyGood:
+    @staticmethod
+
+    def check_key(apikey="None"):
+        print(apikey)
+        windows_key = os.environ.get("OPENAI_API_KEY")
+        if windows_key is not None:
+            try:
+                client=OpenAI()
+                client.models.list()
+                return client
+            except Exception as e:
+                client = OpenAI(api_key = apikey)
+                try:
+                    client.models.list()
+                    print('good')
+                    return client
+                except Exception as e:
+                    return None
+        else:
+            client = OpenAI(api_key = apikey)
+            try:
+                client.models.list()
+                print('good')
+                return client
+            except Exception as e:
+                return None
+        
 class CheckKeyInComputer:
     @staticmethod
     def check_key_in_computer():
-        client = OpenAI()
-        if(client.api_key[:2])=='s1k':
-            print(f'key in env is good:  {client.api_key[:3]}')
-            return True
-        return False
+        windows_key = os.environ.get("OPENAI_API_KEY")
+        if windows_key is None:
+            return False
+        print(f'key in env is good:  {client.api_key[:9]}')
+        return True
+        
 
 
 class CopyResume:

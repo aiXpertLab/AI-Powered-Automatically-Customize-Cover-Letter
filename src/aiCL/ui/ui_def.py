@@ -110,10 +110,7 @@ class UIDef:
         hw.bind("<F1>"    , lambda event: hw.button_click(hw.btn_logout, "logout"))
 
     def def_textbox(self,hw, scroll="none"):
-        try:
-            print(31)
-            hw.can_key.destroy()
-            print(3)
+        try:hw.can_key.destroy()
         except Exception as e: pass
 
         if scroll == 'scroll':
@@ -146,10 +143,12 @@ class UIDef:
         hw.bottom   = hw.can_small.create_text(190, 320,anchor="nw",fill="#5E95FF",font=("Montserrat", 12 * -1),text=text)
 
     def def_key_screen(self, hw):
+        try:hw.can_key.destroy()
+        except:pass
         hw.can_small.itemconfig(hw.head2, text="")
-        hw.can_small.itemconfig(hw.head1, text="")
-        hw.head1 = hw.can_small.create_text(190, 20, anchor="nw", fill="#5E95FF", font=("Montserrat SemiBold", 14 * -1), text="Setup OpenAI API key to use ChatGPT",)
-        hw.head2 = hw.can_small.create_text(190, 60, anchor="nw", fill="#5E95FF", font=("Montserrat SemiBold", 14 * -1), text="Easy steps to get a free one: ",)
+        hw.can_small.itemconfig(hw.head1, text="")                                                                            
+        hw.head1 = hw.can_small.create_text(190, 20, anchor="nw", fill="#5E95FF", font=("Montserrat SemiBold", 14 * -1), text="Start with OpenAI API for ChatGPT",)
+        hw.head2 = hw.can_small.create_text(190, 60, anchor="nw", fill="#5E95FF", font=("Montserrat SemiBold", 14 * -1), text="Get Free Access in Easy Steps:",)
 
         hw.can_key = Canvas(hw, bg="white", height=560, width=350, bd=0, highlightthickness=0, relief="ridge")
         hw.can_key.place(x=190, y=85)
@@ -159,18 +158,18 @@ class UIDef:
 
         hyperlink= HyperlinkManager(hw.key_txt)
         hw.key_txt.insert("1.0","Step 1: ")
-        hw.key_txt.insert(END, "Sign up", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/api-keys")))
+        hw.key_txt.insert(END, "Register ", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/api-keys")))
         hw.key_txt.insert(END, " and ")
-        hw.key_txt.insert(END, "create a free key", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/api-keys")))
-        hw.key_txt.insert(END, " from OpenAI.\n\n")
+        hw.key_txt.insert(END, "Create a Free Key", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/api-keys")))
+        hw.key_txt.insert(END, " with OpenAI.\n\n")
         hw.key_txt.insert(END, "Step 2: ")
-        hw.key_txt.insert(END, "Setup your API key", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/docs/quickstart?context=python")))
-        hw.key_txt.insert(END, " in your computer or enter the key below.",)
+        hw.key_txt.insert(END, "Configure Your API Key", hyperlink.add(partial(webbrowser.open,"https://platform.openai.com/docs/quickstart?context=python")))
+        hw.key_txt.insert(END, " on Your Device or Input the Key Provided Below.",)
 
         hw.entry_key_img = PhotoImage(file=Path_.img_file("entry_key.png"))
         hw.can_key.create_image(0, 115, anchor="nw", image=hw.entry_key_img)
         hw.entry_key_bg = Entry(hw.can_small, bd=0, bg="#EFEFEF", highlightthickness=0)
-        hw.can_key.create_text(10, 125, anchor="nw",fill="#5E95FF",font=("Montserrat Bold", 14 * -1),text="Open API Key:",)
+        hw.can_key.create_text(10, 125, anchor="nw",fill="#5E95FF",font=("Montserrat Bold", 14 * -1),text="OpenAI API Key:",)
 
         hw.entry_key = Entry(hw.can_key, bd=0, bg="#EFEFEF",highlightthickness=0,font=("Montserrat", 12 * -1),foreground="#777777",)
         hw.entry_key.insert(0, 'sk-ReplaceThisWithYourKey')  # Insert default value

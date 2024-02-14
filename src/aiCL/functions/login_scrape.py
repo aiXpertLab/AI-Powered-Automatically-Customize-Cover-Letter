@@ -22,19 +22,34 @@ class LoginScrape:
             
     def scrape_title_corp_desc(self):
         job_title_path    = (By.CLASS_NAME, 'job-details-jobs-unified-top-card__job-title-link')
-        company_name_path = (By.XPATH,      '//*[@id="main"]/div[2]/div[2]/div/div[2]/div/div[1]/div/div[1]/div/div[1]/div[1]/div[2]/div')
+        company_name_path = (By.XPATH,      '//*[@id="main"]/div/div[2]/div[2]/div/div[2]/div/div[1]/div/div[1]/div/div[1]/div[1]/div[2]')
         job_desc_path     = (By.XPATH,      '//*[@id="job-details"]')
 
+        job_title, job_desc, company_name = None, None, None
+
         try:
+            job_desc     = self.driver.find_element(*job_desc_path)     
             job_title    = self.driver.find_element(*job_title_path)    
             company_name = self.driver.find_element(*company_name_path) 
-            job_desc     = self.driver.find_element(*job_desc_path)     
 
             return job_title.text, company_name.text, job_desc.text
         
         except Exception as e:
-            ExceptionHandler.handle_exception(e)
-            return None, None
+            # ExceptionHandler.handle_exception(e)
+            job_title_text, job_desc_text, company_name_text = '11','22','33'
+            if not job_desc:
+                job_desc_text = "The job description cannot be located now. You have the option to manually copy and paste the job description here to continue, or you can try again later."
+            else:
+                job_desc_text = job_desc.text
+            if not job_title:
+                job_title_text = "AI-Powered Auto Cover Letter"
+            else:
+                job_title_text=job_title.text
+            if not company_name:
+                company_name_text = "Easy Steps"
+            else:
+                company_name_text=company_name.text
+            return job_title_text, company_name_text, job_desc_text
 
 
     def close_browser(self):

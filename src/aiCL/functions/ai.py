@@ -3,16 +3,13 @@ from openai import OpenAI
 from config.config import Prompts, Path_
 from utils.utilities import ShowJson
 
-client = OpenAI()
-
 class AI:
 
-    def __init__(me, job_desc, key = 'sk'):
+    def __init__(me, job_desc, hw_client):
         global client
-        if client.api_key[:2] !='sk':
-            client = OpenAI(api_key = key)
+        client = hw_client
         me.job_desc = job_desc
-        # me.job_desc = job_desc[:50]         # temporary, delete soon
+        # me.job_desc = job_desc[:20]         # temporary, delete soon
         print(f"job_desc--- {me.job_desc}")
 
     def ai(me):
@@ -40,7 +37,6 @@ class AI:
                 assistant_id = assistant_data['assistant_id']
                 print(f"Loaded existing assistant ID:  {assistant_id}")
         else:
-
             file = client.files.create(file=open("./src/aiCL/data/MyFile.pdf", "rb"),purpose='assistants')  # uploading
 
             assistant = client.beta.assistants.create(

@@ -1,15 +1,10 @@
 import tkinter as tk
 import tkinter.messagebox as msgbox
 
-from tkinter    import PhotoImage, Entry, Button, Text, END, messagebox
-from functools  import partial
-
-from config.config   import Path_
-from utils.utilities import CopyResume, CheckKeyInComputer, ObjPrinter, ExceptionHandler
+from utils.utilities import CopyResume,KeyGood, ExceptionHandler
 from ui.ui_def       import UIDef
 from functions.login_scrape     import LoginScrape
 from functions.ai import AI
-
 
 class Home(tk.Tk):
     def __init__(hw):
@@ -20,8 +15,6 @@ class Home(tk.Tk):
         hw.ui.def_hw_window(hw)
         hw.ui.def_login_canvas(hw)
         hw.ui.def_login_canvas_elements(hw)
-
-
 #---------------------------------------------------------------------------------------------------------
     def button_click(hw, caller, clicked):
         if clicked != 'login':
@@ -30,7 +23,10 @@ class Home(tk.Tk):
         if clicked == "login":
             user_name = hw.entry_obj_usr.get().lower()
             pass_word = hw.entry_obj_pwd.get()
-            result = msgbox.askyesno('Confirm', "The app will open the browser and try to login with the Username and Password provided. \n\nIf need verification, or username/password not match, please continue login in the browser opened manually. \n\nPlease press Yes to continue, or No to go back. ") 
+            result = msgbox.askyesno('Confirm', 
+                "The app will open the browser and initiate a login attempt using the provided Username and Password."
+                "\n\nIn the event of requiring verification or encountering mismatched credentials, users are advised to proceed with manual login through the opened browser."
+                "\n\nKindly select 'Yes' to proceed or 'No' to return.") 
             # hw.attributes('-topmost', True)
             if result:
                 hw.withdraw()
@@ -38,13 +34,15 @@ class Home(tk.Tk):
                 hw.deiconify()
                 hw.ui.def_small_canvas(hw)
                 hw.ui.def_textbox(hw)
-                hw.ui.def_textbox_content(hw, "Step 1. Find your favorite job in the browser just opened.\n\n"
-                        "Step 2. Click the job title in the browser just opened."
-                        "\n\nStep 3. Click <<<Scrape>>> button on left, to show job description here.")
+                hw.ui.def_textbox_content(hw, "Step 1. Locate your preferred job in the opened browser window.\n\n"
+                        "Step 2. Once found, click on the title of the desired job in the browser window."
+                        "\n\nStep 3. Select the <<<Scrape>>> button on the left-hand side to display the job description here.")
             else:
                 pass
                 
         elif clicked == 'scrape':
+            try:hw.can_key.destroy()
+            except:pass
             job_title, job_company, hw.job_desc = hw.fun.scrape_title_corp_desc()
             hw.job_title_40 = job_title.split(',')[0].strip()[:42]
             parts_job_company = job_company.split('·')
@@ -63,35 +61,38 @@ class Home(tk.Tk):
                 hw.ui.def_text_bottom(hw," Resume is ready.")
             elif result == 'succeed':
                 hw.ui.def_text_bottom(hw," Resume has been successfuly updated.")
-            
-            key_env = CheckKeyInComputer.check_key_in_computer()      # 2. check key 
-            if not key_env:
+           
+            hw.client = KeyGood.check_key()     #check windows key
+            if hw.client is None:
                 key = hw.ui.def_key_screen(hw)        # key is in hw.openai_key
-            # hw.ui.def_text_bottom(hw,"<<< click Scrape for a new opportunity.")
+                # hw.openai_key = hw.entry_key.get()
+            else:
+                hw.ui.def_text_bottom(hw,"<<< AI is generating the cover letter ....")
+                hw.scrape_2_cl() 
         
         elif clicked == 'continue':
-            
-            key_env = CheckKeyInComputer.check_key_in_computer()      # 2. check key 
-            hw.openai_key = hw.entry_key.get()
-            hw.ui.def_text_bottom(hw,"<<< AI is generating the cover letter ....")
-            hw.scrape_2_cl() 
-
+            hw.client = KeyGood.check_key(hw.entry_key.get())      # 2. check key 
+            if hw.client is None:
+                msgbox.showerror(title="Error Code 401 - OpenAI Invalid Authentication", message="Quick fix: \n1. Register and create a free key with OpenAI.\n2. Set up your key on your device.\n3. Try again!")
+                key = hw.ui.def_key_screen(hw)        # key is in hw.openai_key
+            else:
+                hw.ui.def_text_bottom(hw,"<<< AI is generating the cover letter ....")
+                hw.scrape_2_cl() 
 # #---------------------------------------------------------------------------------------------------------
         elif clicked == 'help':
+            try:hw.can_key.destroy()
+            except:pass
             hw.can_small.delete(hw.head1)
             hw.can_small.delete(hw.head2)
             hw.head1 = hw.can_small.create_text(190,  20   ,anchor="nw",fill="#5E95FF",font=("Montserrat SemiBold", 15 * -1),text="AI-Powered Auto Cover Letter",)
             hw.head2 = hw.can_small.create_text(190, 20 +40,anchor="nw",fill="#5E95FF",font=("Montserrat SemiBold", 14 * -1),text="FAQ: ",)
             hw.ui.def_text_bottom(hw,"http://hypech.com for more information.")
-
-            content='1. Please visit http://hypech.com/ai for detailed information.\n\n'\
-                    '2. Only support Chrome for now. Others will be followed.\n\n'\
-                    '3. Download official Chrome Driver from https://googlechromelabs.github.io/chrome-for-testing/.\n\n'\
-                    '4. To update your resume, click here:\n\n'\
-                    '5. Follow http://openai.com to get your key, and setup your key in computer environment.\n\n'\
-                    '6. Test your key here to confirm you setup your key in your computer correctly.'\
-                    '7. Before sending out the cover letter, please double triple check to make sure it relfects your own idea.\n\n'\
-                    '8. We can be reached: Linkedin: X(Twiter): Facebook: Github. Email: '
+            content='1. Currently supports Chrome browser. Download the official Chrome Driver from https://googlechromelabs.github.io/chrome-for-testing/.\n'\
+                    '2. Follow the instructions on http://openai.com to obtain and use your API key.\n'\
+                    '3. Update your resume by clicking here.\n'\
+                    '4. Double-check your cover letter before sending it out.\n'\
+                    '5. Contact us via email: aiXpertLab@gmail.com for any questions.\n\n'\
+                    'Start using this powerful tool to improve your job search today!'
             hw.ui.def_textbox(hw, "scroll")
             hw.ui.def_textbox_content(hw, content) 
 
@@ -103,10 +104,10 @@ class Home(tk.Tk):
 
 
     def scrape_2_cl(hw):
-        cl_obj = AI(hw.job_desc, hw.openai_key)
+        cl_obj = AI(hw.job_desc, hw.client)
         cover_letter=cl_obj.ai()
-
-        hw.can_key.destroy()
+        try:hw.can_key.destroy()
+        except:pass
         hw.can_small.itemconfig(hw.head1, text = hw.job_title_40)
         hw.can_small.itemconfig(hw.head2, text = hw.job_company_first2part)
         hw.ui.def_textbox(hw, "scroll")
