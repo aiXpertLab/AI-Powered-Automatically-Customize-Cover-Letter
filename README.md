@@ -22,30 +22,13 @@
  
 [![Official Website](<https://img.shields.io/badge/-Visit%20the%20Official%20Website%20%E2%86%92-rgb(21,204,116)?style=for-the-badge>)](https://hypech.com)
 
-[![jhc github](https://img.shields.io/badge/GitHub-aiXpertLab-181717.svg?style=flat&logo=github)](https://github.com/aiXpertLab)
 [![jhc linkedin](https://img.shields.io/badge/Linkedin-aiXpert-5087B2.svg?style=flat&logo=Linkedin)](https://www.linkedin.com/in/aiXpert)
 [![jhc twitter](https://img.shields.io/badge/Twitter-@aiXpertLab-00aced.svg?style=flat&logo=twitter)](https://twitter.com/aiXpertLab)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCNcmE7uHam8jSLSa8CvMgQQ)](https://www.youtube.com/@aiXpertLab)
 [![jhc fb](https://img.shields.io/badge/Facebook-aiXpertLab-5087B2.svg?style=flat&logo=facebook)](https://www.facebook.com/aiXpertLab/)
 [![jhc gmail](https://img.shields.io/badge/Gmail-aiXpertLab@gmail.com-5087B2.svg?style=flat&logo=gmail)](https://gmail.com)
 
 </div> 
-
-# Overview
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
 
 The AI-powered solution enables customers to integrate their specialized knowledge with OpenAI models to automate the extraction of relevant information from websites of their interest, effectively training the AI to deliver tailored results as if it were trained on their unique dataset.
 
@@ -54,6 +37,25 @@ The AI-powered solution enables customers to integrate their specialized knowled
 - [Intuitive User Interface](#architecture)
 
 You will get Unlock Your Personalized AI Assistant Effortlessly: Scrape, Upload, and Go.
+
+> [!WARNING]  
+> **Website Scraping Policy**
+> 
+> This project utilizes web scraping techniques to gather data from various websites. It's important to note that not all websites allow scraping, and some may have strict policies against it.
+>
+> **Before using this project**
+>
+> Take the time to carefully read and understand the scraping policies of each website from which you intend to scrape data. These policies can usually be found in the website's terms of service or robots.txt file.
+>
+> **Comply with Policies** 
+>
+>Ensure that you comply with the scraping policies of each website. Violating these policies could lead to consequences such as account restrictions, IP bans, or legal action.
+
+> [!NOTE] Disclaimer
+>This project is provided for general-purpose use, and we do not take responsibility for any consequences resulting from the misuse of web scraping techniques. Users are solely responsible for ensuring compliance with website scraping policies and any associated risks.
+
+
+
 
 # Project Overview
 
@@ -238,3 +240,17 @@ Extra:
 You can check my medium post where I have analyzed the d
 
 https://selenium-python.readthedocs.io/
+
+# Overview
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
