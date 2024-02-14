@@ -60,6 +60,8 @@ You will get Unlock Your Personalized AI Assistant Effortlessly: Scrape, Upload,
 
 There's a saying that goes, 'the job hunt is a job in itself.' Indeed, a significant amount of energy and time is often spent tailoring cover letters to match each job application. With the assistance of an AI, we can automate this process, drastically reducing the time it takes to prepare a cover letter to just a few seconds with a simple process of Scraping, Clicking, and Sending. Not only will your cover letter be fully customized, but it will also maintain a professional tone. Sounds promising, doesn't it? That's because it truly is.
 
+"Welcome to AI-Powered Job Assistance! Our innovative platform automatically tailors cover letters by scraping job descriptions and seamlessly integrating them with your resume. Review before sending and find your perfect fit with ease. Your dream job awaits!"
+
 # Technology Stack
 
 1. OpenAI Assistant ChatGPT

@@ -41,11 +41,11 @@ class UIDef:
         hw.canv_login.create_text( 40, i ,   anchor="nw",fill="white",font=("Montserrat Bold", 50 * -1),text="AI-Powered ",)
         hw.canv_login.create_text( 40, i+65, anchor="nw",fill="white",font=("Montserrat Bold", 50 * -1),text="Auto-Customize",)
         hw.canv_login.create_text( 45, i+130,anchor="nw",fill="white",font=("Montserrat Bold", 50 * -1),text="Cover Letter",)
-        hw.canv_login.create_text( k, j ,    anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="auto-scrape job description.",)
-        hw.canv_login.create_text( k, j + 40,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="auto-combine resume & job description.",)
-        hw.canv_login.create_text( k, j + 80,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="auto-customize cover letter.",)
-        hw.canv_login.create_text( k, j +120,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="review before sending.",)
-        hw.canv_login.create_text( k, j +160,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="bingo, jobs here!",)
+        hw.canv_login.create_text( k, j ,    anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="Automatically scrape job details",)
+        hw.canv_login.create_text( k, j + 40,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="Seamlessly combine resume and ",)
+        hw.canv_login.create_text( k, j + 80,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="job description",)
+        hw.canv_login.create_text( k, j +120,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="Automatically customize cover letter",)
+        hw.canv_login.create_text( k, j +160,anchor="nw",fill="white",font=("Montserrat", 18 * -1),text="Your dream job awaits!",)
         
         hw.canv_login.create_text( 90,    460,anchor="nw",fill="white",font=("Montserrat Bold", 18 * -1),text="© aiXpertLab, 2024",)
 
