@@ -93,26 +93,3 @@ https://chromedriver.chromium.org/
 ```bash
 pip install -r requirements.txt
 ```
-
-[https://github.com/noBaldAaa](https://github.com/noBaldAaa/find-job)https://github.com/noBaldAaa/find-job
-
-https://github.com/LouisCaixuran/auto_job_find_azure
-
-
-You can check my medium post where I have analyzed the d
-
-https://selenium-python.readthedocs.io/
-
-
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
