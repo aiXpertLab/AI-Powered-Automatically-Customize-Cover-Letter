@@ -93,3 +93,8 @@ https://chromedriver.chromium.org/
 ```bash
 pip install -r requirements.txt
 ```
+
+# Contribution
+
+https://github.com/Frrrrrrrrank/auto_job__find__chatgpt__rpa
+https://www.linkedin.com/pulse/automate-your-job-search-personalized-cover-letters-powered-leo-reny-elbye
